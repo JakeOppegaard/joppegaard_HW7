@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+</head>
+<body>
+    <form>
+        <h1>Undergraduate Student Lifetyle Survey</h1>
+    <fieldset>
+        <legend>General Information</legend>
+    <div>
+        <label for="fname"> First Name:
+                <input id="fname" type="text" autofocus>
+        </label>
+    </div>
+        <label for="lname"> Last Name:
+            <input id="lname" type="text">
+        </label>
+    <div>
+        <label for="email"> Email:
+            <input id="email" type="text">
+        </label>
+    </div>
+        <label>Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Please select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+    </fieldset>
+    </form>
+        <button onclick="window.location.href='./page-2.html';">Next Page</button>
+        <p>Page 1 of 2</p>
+</body>
+</html>
