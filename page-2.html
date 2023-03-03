@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Lifestyle Survey</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
-   
 </head>
 <body>
     <form>
@@ -14,13 +13,19 @@
     <fieldset>
         <div>
             <label for="major">Major:</label>
-                <input type="text" id="major" name="major" required>
+                <input type="text" id="major" name="major" required autofocus>
+        </div>
+        <div>
+            <label>Do you live on campus?</label>
+                  <input type="radio" name="living" value="yes">Yes
+                  <input type="radio" name="living" value="no">No
+                  <br>
         </div>
         <div>
             <label for="hours-studying">Hours studying per week:</label>
 		        <input type="number" id="hours-studying" name="hours-studying" min="0" max="168" required>
         </div>
-            <label for="sleep-hours">Average hours of sleep per nigh:</label>
+            <label>Average hours of sleep per nigh:</label>
                 <div>
                   <input type="checkbox" id="sleep1" name="sleep[]" value="5-6">
                   <label for="sleep1">5-6 hours</label>
@@ -44,9 +49,10 @@
         <div>
             <label for="stress-level">Stress level (on a scale of 1-10):</label>
                 <input type="range" id="stress-level" name="stress-level" min="1" max="10" 
-                oninput="document.getElementById('stress-level-output').value=this.value" required>
+                oninput="document.getElementById('stress-level-output').value=this.value">
                 <input type="number" id="stress-level-output" name="stress-level-output" value="1" 
                 min="1" max="10" readonly>
+        </div>
         <div>
             <label>Are you involved in a student organization?</label>
                   <input type="radio" name="organization" value="yes">Yes
@@ -61,8 +67,6 @@
         </div>
     </fieldset>
 	</form>
-    </fieldset>
-    </form>
         <button onclick="window.location.href='./thank-you.html';">Submit Survey</button>
         <button onclick="window.location.href='./index.html';">Back</button> 
         <p>Page 2 of 2</p>
